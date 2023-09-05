@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./main.js" defer></script>
+  <title>Focus timer 2.0</title>
+</head>
+<body>
+  <div class="app">
+    <section class="timer">
+      <div class="watch">
+        
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+
+      </div>
+      <div id="controlers">
+
+        <button data-action="toggleRunning" class="ph ph-play-circle"></button >
+
+        <button data-action="toggleRunning" class="ph ph-pause-circle" ></button>
+
+        <button data-action="reset" class="ph ph-stop-circle"></button>
+
+        <button data-action="plus" class="ph ph-plus-circle"></button>
+
+        <button data-action="less" class="ph ph-minus-circle"></button>
+
+      </div>
+    </section>
+    <section class="songs">
+      <figure id="btn-songs">
+        <figcaption id="floresta" class="ph ph-tree "></figcaption>
+        <figcaption id="chuva" class="ph ph-cloud-rain "></figcaption>
+        <figcaption id="cafeteria" class="ph ph-storefront"></figcaption>
+        <figcaption id="lareira" class="ph ph-campfire"></figcaption>
+      </figure>
+
+    </section>
+
+  </div>
+
+  
+</body>
+</html>

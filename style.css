@@ -1,0 +1,90 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+  --bgcolor-coloriconpress-white:#FFF;
+  --bg-card:#E1E1E6;
+  --color-icons--number:#323238;
+  --bg-iconspress:#02799D;
+  
+  
+}
+.app{
+  background-color:var(--bgcolor-white);
+  padding: 19.6rem 23rem 18.8rem;
+  display: flex;
+  gap:19rem;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.timer{
+  display: flex;
+  flex-direction: column;
+  gap:4.8rem;
+}
+.watch span{
+  color: var(--color-icons--number);
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  font-size: 12.6rem;
+  font-weight: 500;
+
+}
+#controlers{
+  display: inline-flex;
+  gap:4rem;
+}
+#controlers button{
+  font-size: 4.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.songs figure{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:3.2rem;
+}
+figure figcaption{
+  display: block;
+  margin:auto;
+  background-color: var(--bg-card);
+  font-size: 5.8rem;
+  padding:4.3rem;
+  border-radius: 2.4rem;
+  color:var(--color-icons);
+  cursor: pointer;
+}
+.press{
+  background-color: var(--bg-iconspress);
+  color: var(--bgcolor-coloriconpress-white);
+}
+
+
+/*controlers*/
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle{
+  display: none;
+}
+
+@media(max-width:1299px){
+  .app{
+    margin: 5rem;
+    flex-direction: column;
+    
+  }
+  .watch{
+    text-align: center;
+  }
+  .watch span{
+    
+    font-size: 9rem;
+    
+  
+  }
+}

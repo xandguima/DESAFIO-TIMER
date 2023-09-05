@@ -1,0 +1,9 @@
+export const btnSound=new Audio('./assets/mouse-click.mp3')
+export const lareiraSound= new Audio('./assets/Lareira.wav')
+export const cafeteriaSound=new Audio('./assets/Cafeteria.wav')
+export const chuvaSond=new Audio('./assets/Chuva.wav')
+export const florestaSound=new Audio('./assets/Floresta.wav')
+florestaSound.loop=true
+chuvaSond.loop=true
+cafeteriaSound.loop=true
+lareiraSound.loop=true
