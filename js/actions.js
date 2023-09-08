@@ -8,15 +8,10 @@ export function toggleRunning(){
   
   state.isRunning=document.documentElement.classList.toggle('running')
   sound.btnSound.play()
+  timer.countDown()
+   
   
-  if(state.isRunning){
-    timer.countDown()
-    console.log("estou no toggleRunning estou rodando")
-  }else{
-    console.log("estou no toggleRunning e estou pausado")
-  }
   
-
 }
 
 export function reset(){

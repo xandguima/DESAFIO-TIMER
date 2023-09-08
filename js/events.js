@@ -15,6 +15,7 @@ export function registerControlers(){
 
     actions[action]()
   })
+  
   el.songs.addEventListener('click',(event)=>{
     const song=event.target.id
     console.log(song)

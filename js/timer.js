@@ -8,13 +8,12 @@ import * as actions from './actions.js'
 export function countDown(){
 
 
-  clearTimeout(state.countdownId)
+  clearTimeout(state.countDownId)
 
   console.log(state.isRunning)
   if(!state.isRunning){
     return
   }
-  
   
   let minutes= Number(el.minutes.textContent)
   let seconds = Number(el.seconds.textContent)
@@ -34,6 +33,7 @@ export function countDown(){
   updateDisplay(minutes,seconds)
 
   state.countDownId = setTimeout(()=>countDown(),1000)
+       
 }
 
 
